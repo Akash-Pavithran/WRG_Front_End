@@ -71,7 +71,7 @@ $primary_color: #102421;
             font-weight: medium;
             font-size: .8rem;
             & a{
-                color: black;
+                color: #151442;;
                 text-decoration: none;
                 align-self: center;
             }
@@ -88,6 +88,19 @@ $primary_color: #102421;
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                & .cart_count{
+                    align-self: center;
+                    display: flex;
+                    & .count{
+                        display: flex;
+                        position: absolute;
+                        color: white;
+                        font-size: 10px;
+                        align-self: center;
+                        transform: translateX(4px);
+                        justify-content: center;
+                    }
+                }
                 & .cart{
                     width: 20px;
                     height: 20px;

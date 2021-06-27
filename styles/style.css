@@ -90,7 +90,7 @@
 }
 
 .navigation .navigation_right .navigation_pages a {
-  color: black;
+  color: #151442;
   text-decoration: none;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -120,6 +120,30 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.navigation .navigation_right .navigation_icons .icons_right .cart_count {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .navigation_right .navigation_icons .icons_right .cart_count .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navigation .navigation_right .navigation_icons .icons_right .cart {
