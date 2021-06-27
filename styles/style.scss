@@ -1,3 +1,5 @@
+@import './fontStyle';
+
 $primary_color: #102421;
 
 *{
@@ -6,45 +8,14 @@ $primary_color: #102421;
     padding: 0px;
     
 }
-@font-face {
+
+h1, h2, h3, h4{
     font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Bold.otf");
-    font-weight: 700;
-    font-style: bold;
 }
-@font-face {
-    font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Bold\ Italic.otf");
-    font-weight: 700;
-    font-style: italic;
+h1{
+    color: #151442;
+    font-size: 60px;
 }
-@font-face {
-    font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Medium.otf");
-    font-weight: 500;
-    font-style: medium;
-}
-@font-face {
-    font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Medium\ Italic.otf");
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Thin.otf");
-    font-weight: 200;
-    font-style: thin;
-}
-@font-face {
-    font-family: "WRG";
-    src: url("../font/Type\ Dynamic\ -\ Sailec\ Thin\ Italic.otf");
-    font-weight: 200;
-    font-style: italic;
-}
-// body{
-//     font-family: "WRG";
-// }
 .navigation{
     position: absolute;
     z-index: 10;
@@ -85,7 +56,7 @@ $primary_color: #102421;
                 align-self: center;
                 & img.user{
                     align-self: center;
-                    width: 16px;
+                    width: 14px;
                     height: 16px;
                 }
             }
@@ -195,6 +166,27 @@ $primary_color: #102421;
                 position: relative;
                 left: -18%;
                 top: 10%;
+            }
+        }
+    }
+    & .contents{
+        width: 100vw;
+        & .heading_container{
+            width: 100vw;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & .products{
+            display: flex;
+            & .product{
+                text-align: center;
+                align-items: center;
+                & span{
+                    font-size: 10px;
+                    font-family: "WRG";
+                }
             }
         }
     }
