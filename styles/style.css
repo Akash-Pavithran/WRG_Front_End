@@ -7,12 +7,44 @@
 
 @font-face {
   font-family: "WRG";
-  src: url("../font/Type_Dynamic_Sailec_Black.otf");
+  src: url("../font/Type Dynamic - Sailec Bold.otf");
+  font-weight: 700;
   font-style: bold;
 }
 
-body {
+@font-face {
   font-family: "WRG";
+  src: url("../font/Type Dynamic - Sailec Bold Italic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "WRG";
+  src: url("../font/Type Dynamic - Sailec Medium.otf");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "WRG";
+  src: url("../font/Type Dynamic - Sailec Medium Italic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "WRG";
+  src: url("../font/Type Dynamic - Sailec Thin.otf");
+  font-weight: 200;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: "WRG";
+  src: url("../font/Type Dynamic - Sailec Thin Italic.otf");
+  font-weight: 200;
+  font-style: italic;
 }
 
 .navigation {
@@ -35,6 +67,8 @@ body {
 .navigation .logo {
   color: white;
   font-family: 'WRG';
+  font-size: .85rem;
+  letter-spacing: 5px;
 }
 
 .navigation .navigation_right {
@@ -50,6 +84,17 @@ body {
   display: flex;
   gap: 20px;
   list-style-type: none;
+  font-family: "WRG";
+  font-weight: medium;
+  font-size: .8rem;
+}
+
+.navigation .navigation_right .navigation_pages a {
+  color: black;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navigation .navigation_right .navigation_icons {
@@ -57,6 +102,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation .navigation_right .navigation_icons img {
@@ -64,8 +112,19 @@ body {
   height: 15px;
 }
 
-.navigation .navigation_right .navigation_icons .icons_right img {
-  gap: 20px;
+.navigation .navigation_right .navigation_icons .icons_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.navigation .navigation_right .navigation_icons .icons_right .cart {
+  width: 20px;
+  height: 20px;
 }
 
 .main_container {
