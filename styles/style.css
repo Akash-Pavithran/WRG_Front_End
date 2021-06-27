@@ -49,8 +49,9 @@
 
 .navigation {
   position: absolute;
+  z-index: 10;
   width: 100vw;
-  padding-right: 20px;
+  padding-right: 50px;
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +99,7 @@
 }
 
 .navigation .navigation_right .navigation_icons {
-  gap: 35px;
+  gap: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +179,7 @@
 
 .main_container .landing_screen {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-color: #102421;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +189,8 @@
 .main_container .landing_screen .landing_left {
   position: relative;
   left: 10%;
+  top: 8%;
+  width: 60vw;
 }
 
 .main_container .landing_screen .landing_left .text_container {
@@ -243,7 +246,8 @@
   outline: none;
   background-color: #C7E1BF;
   border-color: transparent;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 200;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
@@ -256,9 +260,18 @@
 }
 
 .main_container .landing_screen .landing_right {
-  height: 100vh;
+  z-index: 1;
+  height: 120vh;
   width: 40vw;
   background-color: white;
   float: right;
+}
+
+.main_container .landing_screen .landing_right .landing_image {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  left: -18%;
+  top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
