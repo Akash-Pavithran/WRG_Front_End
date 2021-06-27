@@ -129,6 +129,56 @@ $primary_color: #102421;
         width: 100vw;
         height: 100vh;
         background-color: $primary_color;
+        display: flex;
+        & .landing_left{
+            position: relative;
+            left: 10%;
+            & .text_container{
+                width: 60vw;
+                height: 100vh;
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+                color: white;
+                font-family: "WRG";
+                & .beauty{
+                    font-weight: 200;
+                    font-size: 10px;
+                    letter-spacing: 10px;
+    
+                }
+                & .title{
+                    font-weight: 700;
+                    font-size: 70px;
+                }
+                & .subtitle{
+                    font-weight: 200;
+                    font-size: 15px;
+                    color: #D2D2D2;
+                    margin-top: 10px;
+                }
+                & .buttons{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 20px;
+                    & .landing_btn{
+                        padding: 10px;
+                        border-radius: 100px;
+                        outline: none;
+                        background-color: #C7E1BF;
+                        border-color: transparent;
+                        font-size: 12px;
+                        transition: 200ms ease-in-out;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: 200ms ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
         & .landing_right{
             height: 100vh;
             width: 40vw;
