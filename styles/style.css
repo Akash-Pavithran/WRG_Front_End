@@ -56,10 +56,16 @@ h1 {
   font-size: 60px;
 }
 
+.body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .navigation {
   position: absolute;
   z-index: 10;
   width: 100vw;
+  max-width: 100%;
   padding-right: 50px;
   padding-left: 20px;
   display: -webkit-box;
@@ -183,11 +189,12 @@ h1 {
 
 .main_container {
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
 }
 
 .main_container .landing_screen {
-  width: 100vw;
+  width: 100%;
   height: 120vh;
   background-color: #102421;
   display: -webkit-box;
@@ -285,11 +292,11 @@ h1 {
 }
 
 .main_container .contents {
-  width: 100vw;
+  max-width: 100%;
 }
 
 .main_container .contents .heading_container {
-  width: 100vw;
+  width: 100%;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,10 +315,11 @@ h1 {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .main_container .contents .products .product {
@@ -324,5 +332,64 @@ h1 {
 .main_container .contents .products .product span {
   font-size: 10px;
   font-family: "WRG";
+}
+
+.main_container .contents .quote_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_container .contents .quote_container .texts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .contents .quote_container .texts h2 {
+  color: white;
+  font-size: 55px;
+  position: relative;
+  left: 50px;
+}
+
+.main_container .contents .quote_container .texts .quote_bg {
+  width: 45%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.main_container .contents .quote_container .texts .quote_bg h3 {
+  color: black;
+  font-size: 24px;
+}
+
+.main_container .contents .quote_container .quote_image {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 /*# sourceMappingURL=style.css.map */
