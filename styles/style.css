@@ -379,12 +379,30 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
+  gap: 30px;
   background-color: white;
 }
 
 .main_container .contents .quote_container .texts .quote_bg h3 {
   color: black;
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 55px;
+  font-family: WRG;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.main_container .contents .quote_container .texts .quote_bg .top_quote {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main_container .contents .quote_container .texts .quote_bg .bottom_quote {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .main_container .contents .quote_container .quote_image {

@@ -223,10 +223,23 @@ h1{
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    padding:30px;
+                    gap: 30px;
                     background-color: white;
                     & h3{
                         color: black;
-                        font-size: 24px;
+                        font-size: 28px;
+                        line-height: 55px;
+                        font-family: WRG;
+                        font-style: italic;
+                        font-weight: 200;
+                    }
+                    & .top_quote{
+                        align-self: flex-start;
+                    }
+                    & .bottom_quote{
+                        align-self: flex-end;
+                        transform: rotate(180deg);
                     }
                 }
             }
