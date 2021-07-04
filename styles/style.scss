@@ -20,8 +20,13 @@ h1{
     max-width: 100vw;
     overflow-x:hidden;
 }
+.scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    color: black;
+}
 .navigation{
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 100vw;
     max-width: 100%;
@@ -31,6 +36,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    
     & .logo{
         color: white;
         font-family: 'WRG';
@@ -177,9 +183,14 @@ h1{
     }
     & .contents{
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
         & .heading_container{
             width: 100%;
             margin-top: 50px;
+            position: relative;
+            top: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -191,11 +202,26 @@ h1{
             justify-content: space-between;
             margin-bottom: 50px;
             & .product{
+                display: flex;
+                flex-direction: column;
                 text-align: center;
                 align-items: center;
+                gap: 13px;
+                & img{
+                    width: 296px;
+                    height: 356px;
+                }
                 & span{
                     font-size: 10px;
                     font-family: "WRG";
+                    max-width: 130px;
+                    font-weight: 200;
+                }
+                & h5{
+                    font-size: 10px;
+                    font-family: "WRG";
+                    max-width: 130px;
+                    font-weight: 200;
                 }
             }
         }
@@ -217,29 +243,52 @@ h1{
                     left: 50px;
                 }
                 & .quote_bg{
-                    width: 45%;
+                    width: 41%;
                     height: 75%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     padding:30px;
-                    gap: 30px;
-                    background-color: white;
+                    padding-left: 55px;
+                    padding-right: 55px;
+                
+                    gap: 2px;
+                    margin-right: 34px;
+                    background-color: #FFF3F3;
                     & h3{
-                        color: black;
+                        color: #342B42, 100%;
                         font-size: 28px;
-                        line-height: 55px;
+                        line-height: 46px;
                         font-family: WRG;
-                        font-style: italic;
-                        font-weight: 200;
+                        font-weight: 500;
                     }
                     & .top_quote{
                         align-self: flex-start;
+                        width: 44px;
+                        height: 36.24px;
+                        transform: scale(0.65);
                     }
                     & .bottom_quote{
                         align-self: flex-end;
-                        transform: rotate(180deg);
+                        transform: scale(0.65);
+                        width: 44px;
+                        height: 36.24px;
+
+                    }
+                    & .author{
+                        position: relative;
+                        right: 30px;
+                        top: 23px;
+                        font-family: WRG;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                        align-self: flex-end;
+                        & .author_detail{
+                            font-size: 12px;
+                            font-weight: 200;
+                        }
                     }
                 }
             }
