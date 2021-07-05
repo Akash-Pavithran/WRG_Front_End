@@ -12,6 +12,20 @@ $primary_color: #102421;
 h1, h2, h3, h4{
     font-family: "WRG";
 }
+::-webkit-scrollbar {
+    height: 3px;              /* height of horizontal scrollbar*/
+    width: 10px;               /* width of vertical scrollbar */
+    border: 1px solid #d5d5d5;
+}
+::-webkit-scrollbar-track {
+border-radius: 0;
+background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 0;
+background: $primary_color;
+}
 h1{
     color: #151442;
     font-size: 60px;
@@ -307,21 +321,9 @@ h1{
             gap: 60px;
             padding-left: 60px;
             padding-right: 60px;
-            ::-webkit-scrollbar {
-                height: 2px;              /* height of horizontal scrollbar ← You're missing this */
-                width: 4px;               /* width of vertical scrollbar */
-                border: 1px solid #d5d5d5;
-            }
-            ::-webkit-scrollbar-track {
-            border-radius: 0;
-            background: #eeeeee;
-            }
             
-            ::-webkit-scrollbar-thumb {
-            border-radius: 0;
-            background: #b0b0b0;
-            }
             & .product {
+                margin-bottom: 45px;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -340,6 +342,32 @@ h1{
                 }
             }
             
+        }
+        & .heading_container_3{
+            margin: auto;
+            margin-top: 40px;
+        }
+        & .benefit_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            & .benefit{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 40px;
+                & img{
+                    width: 50px;
+                    height: 50px;
+                }
+                & span{
+                    font-family: WRG;
+                    font-weight: 500;
+                }
+            }
         }
     }
 

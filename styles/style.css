@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "WRG";
   src: url("../font/Type Dynamic - Sailec Bold.otf");
@@ -50,6 +49,24 @@
 
 h1, h2, h3, h4 {
   font-family: "WRG";
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+  /* height of horizontal scrollbar*/
+  width: 10px;
+  /* width of vertical scrollbar */
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #102421;
 }
 
 h1 {
@@ -496,25 +513,8 @@ h1 {
   padding-right: 60px;
 }
 
-.main_container .contents .vit_products ::-webkit-scrollbar {
-  height: 2px;
-  /* height of horizontal scrollbar ← You're missing this */
-  width: 4px;
-  /* width of vertical scrollbar */
-  border: 1px solid #d5d5d5;
-}
-
-.main_container .contents .vit_products ::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: #eeeeee;
-}
-
-.main_container .contents .vit_products ::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #b0b0b0;
-}
-
 .main_container .contents .vit_products .product {
+  margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,5 +541,49 @@ h1 {
   font-family: "WRG";
   max-width: 130px;
   font-weight: 200;
+}
+
+.main_container .contents .heading_container_3 {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.main_container .contents .benefit_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.main_container .contents .benefit_container .benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.main_container .contents .benefit_container .benefit img {
+  width: 50px;
+  height: 50px;
+}
+
+.main_container .contents .benefit_container .benefit span {
+  font-family: WRG;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
