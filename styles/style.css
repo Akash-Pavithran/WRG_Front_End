@@ -45,9 +45,13 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, span {
   font-family: "WRG";
 }
 
@@ -282,6 +286,7 @@ h1 {
 }
 
 .main_container .landing_screen .landing_left .text_container .buttons .landing_btn {
+  cursor: pointer;
   padding: 10px;
   border-radius: 100px;
   outline: none;
@@ -585,5 +590,86 @@ h1 {
 .main_container .contents .benefit_container .benefit span {
   font-family: WRG;
   font-weight: 500;
+}
+
+.main_container .contents .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px;
+  padding-right: 145px;
+  margin-top: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #102421;
+}
+
+.main_container .contents .footer ul {
+  list-style-type: none;
+  color: white;
+  font-size: 15px;
+  font-family: WRG;
+  font-weight: 200;
+}
+
+.main_container .contents .footer .footer_left h1 {
+  font-weight: 500;
+  color: white;
+}
+
+.main_container .contents .footer .footer_left span {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.main_container .contents .footer .footer_left span .copyright {
+  font-size: 26px;
+  position: relative;
+  top: -4.3px;
+}
+
+.main_container .contents .footer .footer_left > span {
+  margin-top: 50px;
+}
+
+.main_container .contents .footer .footer_right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.main_container .contents .footer .footer_right span {
+  font-size: 16px;
+  color: white;
+  font-family: WRG;
+  font-weight: 800;
+}
+
+.main_container .contents .footer .footer_right .about_us, .main_container .contents .footer .footer_right .get_in_touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.main_container .contents .footer .footer_right .about_us ul li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.main_container .contents .footer .footer_right .get_in_touch ul li:not(:first-child) {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
